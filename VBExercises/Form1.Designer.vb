@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,18 +20,18 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"item 1"}, -1, System.Drawing.Color.Empty, System.Drawing.SystemColors.Control, Nothing)
+        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem(New String() {"Exercise1"}, -1, System.Drawing.Color.Empty, System.Drawing.SystemColors.Control, Nothing)
+        Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Exercise2")
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ExerciseLV = New System.Windows.Forms.ListView()
+        Me.ExercisePanel = New System.Windows.Forms.Panel()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.ColumnHeader1 = New System.Windows.Forms.ColumnHeader()
         Me.MenuStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -72,8 +72,8 @@ Partial Class Form1
         '
         'TabPage1
         '
-        Me.TabPage1.Controls.Add(Me.ListView1)
-        Me.TabPage1.Controls.Add(Me.Panel1)
+        Me.TabPage1.Controls.Add(Me.ExerciseLV)
+        Me.TabPage1.Controls.Add(Me.ExercisePanel)
         Me.TabPage1.Location = New System.Drawing.Point(4, 29)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
@@ -82,26 +82,26 @@ Partial Class Form1
         Me.TabPage1.Text = "Exercises"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
-        'ListView1
+        'ExerciseLV
         '
-        Me.ListView1.BackColor = System.Drawing.SystemColors.InactiveBorder
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1})
-        Me.ListView1.GridLines = True
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1})
-        Me.ListView1.Location = New System.Drawing.Point(3, 3)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(124, 441)
-        Me.ListView1.TabIndex = 4
-        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ExerciseLV.BackColor = System.Drawing.SystemColors.InactiveBorder
+        Me.ExerciseLV.GridLines = True
+        Me.ExerciseLV.HideSelection = False
+        Me.ExerciseLV.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2})
+        Me.ExerciseLV.Location = New System.Drawing.Point(3, 3)
+        Me.ExerciseLV.Name = "ExerciseLV"
+        Me.ExerciseLV.Size = New System.Drawing.Size(124, 441)
+        Me.ExerciseLV.TabIndex = 4
+        Me.ExerciseLV.UseCompatibleStateImageBehavior = False
+        Me.ExerciseLV.View = System.Windows.Forms.View.SmallIcon
         '
-        'Panel1
+        'ExercisePanel
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Gainsboro
-        Me.Panel1.Location = New System.Drawing.Point(133, 3)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(728, 441)
-        Me.Panel1.TabIndex = 1
+        Me.ExercisePanel.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.ExercisePanel.Location = New System.Drawing.Point(133, 3)
+        Me.ExercisePanel.Name = "ExercisePanel"
+        Me.ExercisePanel.Size = New System.Drawing.Size(728, 441)
+        Me.ExercisePanel.TabIndex = 1
         '
         'TabPage2
         '
@@ -112,10 +112,6 @@ Partial Class Form1
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Others"
         Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'ColumnHeader1
-        '
-        Me.ColumnHeader1.Tag = "55"
         '
         'Form1
         '
@@ -140,8 +136,7 @@ Partial Class Form1
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents ListView1 As ListView
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents ExerciseLV As ListView
+    Friend WithEvents ExercisePanel As Panel
     Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents ColumnHeader1 As ColumnHeader
 End Class
