@@ -46,4 +46,5 @@ Public Class Exercise1
         DisAmtValLbl.Text = discountAmt & " Rs /-"
         FinalAmtLblVal.Text = newPurchaseAmt & " Rs /-"
     End Sub
+
 End Class

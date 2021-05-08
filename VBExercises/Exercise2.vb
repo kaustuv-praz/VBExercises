@@ -36,6 +36,7 @@ Public Class Exercise2
         End If
     End Sub
 
+
     Private Sub CalculateBtn_Click(sender As Object, e As EventArgs) Handles CalculateBtn.Click
         ' CALCULATING 5% DISCOUNT ON Purchase Amt
         Dim discountAmt As Double
@@ -51,7 +52,4 @@ Public Class Exercise2
         FinalAmtLblVal.Text = newPurchaseAmt & " Rs /-"
     End Sub
 
-    Private Sub Exercise2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class
