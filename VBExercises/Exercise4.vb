@@ -15,18 +15,14 @@ Public Class Exercise4
     End Sub
 
 
-    Private Sub Update_Discount_Settings(newPurchaseAmt)
-        If newPurchaseAmt >= 5000 Then
-            Calculate_Discount(True, "YES", Color.Green, "10%", 0.1)
-        ElseIf newPurchaseAmt >= 4000 And newPurchaseAmt < 5000 Then
+    Private Sub Update_Discount_Settings(newBalanceAmt)
+        If newBalanceAmt > 99999 Then
             Calculate_Discount(True, "YES", Color.Green, "7%", 0.07)
-            interestPercent = 0.7 ' in percentage
-        ElseIf newPurchaseAmt >= 3000 And newPurchaseAmt < 4000 Then
+        ElseIf newBalanceAmt >= 50000 And newBalanceAmt < 100000 Then
             Calculate_Discount(True, "YES", Color.Green, "5%", 0.05)
-        ElseIf newPurchaseAmt >= 2000 And newPurchaseAmt < 3000 Then
+            interestPercent = 0.7 ' in percentage
+        ElseIf newBalanceAmt < 50000 Then
             Calculate_Discount(True, "YES", Color.Green, "3%", 0.03)
-        ElseIf newPurchaseAmt < 2000 Then
-            Calculate_Discount(True, "YES", Color.Green, "2%", 0.02)
         End If
     End Sub
 
