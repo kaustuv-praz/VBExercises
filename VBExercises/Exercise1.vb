@@ -1,4 +1,6 @@
-﻿Public Class Exercise1
+﻿'Write a program To calculate discount On the basis Of following assumption
+'a) If purchased amount Is greater than Or equal to 1000, discount Is 5%
+Public Class Exercise1
     Dim newPurchaseAmt As Double
     Dim discountable As Boolean
     Private Sub PurchaseAmtTB_TextChanged(sender As Object, e As EventArgs) Handles PurchaseAmtTB.TextChanged
@@ -11,7 +13,7 @@
 
 
     Private Sub Update_Discount_Settings(newPurchaseAmt)
-        If newPurchaseAmt > 1000 Then
+        If newPurchaseAmt >= 1000 Then
             discountable = True
 
             DisStatLvlVal.Text = "YES"
