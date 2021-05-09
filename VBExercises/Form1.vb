@@ -41,7 +41,10 @@
                 switchPanel(Exercise6)
             Case "Exercise7"
                 switchPanel(Exercise7)
+            Case "Exercise8"
+                switchPanel(Exercise8)
+            Case "Exercise9"
+                switchPanel(Exercise9)
         End Select
     End Sub
-
 End Class

@@ -29,6 +29,8 @@ Partial Class Form1
         Dim ListViewItem5 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Exercise5")
         Dim ListViewItem6 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Exercise6")
         Dim ListViewItem7 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Exercise7")
+        Dim ListViewItem8 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Exercise8")
+        Dim ListViewItem9 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Exercise9")
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -92,7 +94,7 @@ Partial Class Form1
         Me.ExerciseLV.BackColor = System.Drawing.SystemColors.InactiveBorder
         Me.ExerciseLV.GridLines = True
         Me.ExerciseLV.HideSelection = False
-        Me.ExerciseLV.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4, ListViewItem5, ListViewItem6, ListViewItem7})
+        Me.ExerciseLV.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4, ListViewItem5, ListViewItem6, ListViewItem7, ListViewItem8, ListViewItem9})
         Me.ExerciseLV.Location = New System.Drawing.Point(3, 3)
         Me.ExerciseLV.Name = "ExerciseLV"
         Me.ExerciseLV.Size = New System.Drawing.Size(124, 441)
