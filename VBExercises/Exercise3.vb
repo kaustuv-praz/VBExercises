@@ -49,6 +49,10 @@ Public Class Exercise3
         disPercent = disPercentVal ' in percentage
     End Sub
 
+    Private Sub Exercise3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
     Private Sub CalculateBtn_Click(sender As Object, e As EventArgs) Handles CalculateBtn.Click
         Dim discountAmt As Double
 
