@@ -37,9 +37,6 @@
             ResultLblVal.Text = "Na"
         End If
 
-
-
-
     End Sub
 
 End Class
